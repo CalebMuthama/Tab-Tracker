@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 
 const PORT = process.env.PORT || 8081;
 
-app.get("/", (req, res) => {
-  res.json({
-    message: "Hello mama I made it",
+app.post("/register", (req, res) => {
+  res.status(200).json({
+    message: `${req.body.email} was registerd. Have fun in our site`,
   });
 });
 console.log("Hello world");
