@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 import AuthenticationService from '@/services/AuthenticationService'
 
 const form = reactive({
